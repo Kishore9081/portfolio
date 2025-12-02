@@ -24,13 +24,42 @@
   }
   .title h1 {
     margin: 0;
-    font-size: 80px; /* bigger */
-    color: #00ffaa;
-  }
-  .title h2 {
+    font-size: 80px;
+    color: #FFD700; /* Elegant Gold for "KISHORE'S" */
+    text-shadow: 0 0 15px #FFD700aa, 0 0 30px #FFEA70aa;
+}
+
+.title h2 {
     margin: 0;
-    font-size: 50px; /* bigger */
+    font-size: 50px;
+    color: #FF8C00; /* Elegant Dark Orange for "PORTFOLIO" */
+    text-shadow: 0 0 10px #FF8C00aa, 0 0 25px #FFA500aa;
+}
+
+
+
+  /* Top-left corner text */
+  .top-left {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #00ffaa;
+    text-shadow: 0 0 10px #ffdd00;
+    z-index: 20;
+  }
+
+  /* Bottom-right corner text */
+  .bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: bold;
     color: #ffdd00;
+    text-shadow: 0 0 6px #00ffaa;
+    z-index: 20;
   }
 
   /* Main Section */
@@ -47,8 +76,8 @@
   /* Left side - rotating circle */
   .left-container {
     position: relative;
-    width: 600px;   /* bigger */
-    height: 600px;  /* bigger */
+    width: 600px;
+    height: 600px;
   }
 
   .center-photo {
@@ -56,7 +85,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 220px;  /* bigger */
+    width: 220px;
     height: 220px; 
     background: url('pic1.png') center/cover no-repeat;
     border-radius: 50%;
@@ -83,8 +112,8 @@
 
   .item {
     position: absolute;
-    width: 150px;   /* bigger */
-    height: 150px;  /* bigger */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -173,10 +202,15 @@
     .center-photo { width: 160px; height: 160px; }
     .item { width: 120px; height: 120px; font-size: 14px; }
     .right-container { width: 90%; max-width: none; }
+    .top-left { font-size: 20px; }
+    .bottom-right { font-size: 16px; }
   }
 </style>
 </head>
 <body>
+
+<!-- Top-left welcome text -->
+<div class="top-left">Welcome to</div>
 
 <!-- Top Center Title -->
 <div class="title">
@@ -202,7 +236,7 @@
       <ul>
         <li>E-commerce website: Frontend HTML/CSS/JS, Backend Python/PHP, DB MySQL</li>
         <li>Building Portfolio Website</li>
-	<h3>Explore more on github </h3>
+        <h3>Explore more on GitHub</h3>
       </ul>
     </div>
     <div id="Skills" class="content-box">
@@ -238,10 +272,13 @@
       <p>Email: <a href="mailto:kishorekishore07215@gmail.com">kishorekishore07215@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/kishore9081" target="_blank">kishore9081</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/kishore2005" target="_blank">kishore2005</a></p>
-      <p>Website: <a href="https://portfolio.com" target="_blank">portfolio.com</a></p>
+      <p>Website: <a href="https://kishore9081.github.io/portfolio/" target="_blank">kishore9081.github.io/portfolio/</a></p>
     </div>
   </div>
 </div>
+
+<!-- Bottom-right text -->
+<div class="bottom-right">Thank you for visiting!</div>
 
 <script>
    const items = [
